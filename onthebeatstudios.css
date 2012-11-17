@@ -1,0 +1,377 @@
+/*///////////////////////////////////////////////////
+
+STYLE SHEET
+
+Site: onthebeatstudios.com
+Author: James Angus - ejangi.com
+Copyright: (c) Copyright James Angus 2006 - 2011.
+Version: 2006.
+
+/////////////////////////////////////////////////*/
+
+
+/*-----------------------------------------------
+General Layout
+-----------------------------------------------*/
+
+* { margin: 0; padding: 0; }
+
+html, body, div, p {
+	font-family: Arial, Verdana, Helvetica, sans-serif; 
+	color: #fff;
+}
+
+body { 
+	position: relative;
+	padding: 0;
+	background: #1a1a18;
+	font-size: x-small; /* for IE5/win */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small; /* For Compliant browsers */
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	line-height: 150%;
+}
+
+html>body { 
+	font-size: small; /* Be nice to opera */
+}
+
+#site {
+	width: auto;
+	max-width:  920px;
+	margin: 0 auto;
+	border-top: 15px solid #373020;
+}
+
+.clr { clear: both; }
+hr.clr { border:  0; }
+
+/*-----------------------------------------------
+Generic elements
+-----------------------------------------------*/
+
+a:link,
+a:visited {
+	color: #bd9b6e;
+}
+
+a:hover,
+a:active {
+	color:  #fff;
+	background: #bd9b6e;
+	text-decoration: none;
+}
+
+ul, ol {
+	margin: 1em;
+}
+
+h2, h3, h4, h5, h6 {
+	margin: 1em .7em;
+}
+
+p, li {
+	font-size: 95%;
+}
+
+li {
+	margin-left: 2em;
+}
+
+hr {
+	border-width: 0;
+	border-bottom: 1px solid #373020;
+}
+
+/*-----------------------------------------------
+Masthead Layout
+-----------------------------------------------*/
+
+#masthead {
+	position: relative;
+	color: #bd9b6e;
+	padding: 2.5em 2em 1em 2em;
+}
+
+#masthead h1 { 
+	display: block;
+	float: left;
+	width: 216px;
+	text-transform: uppercase;
+}
+
+#masthead h1 a {
+	display:  block;
+	width: 216px;
+	height: 19px;
+	background: url(images/siteTitle.gif) no-repeat 0 0;
+	background: url(images/siteTitle.png) no-repeat 0 0;
+	background-size: 216px 19px;
+	text-indent:  -5000px;
+	text-decoration: none;
+}
+
+ul#mainmenu {
+	float: right;
+	width: 55%;
+	margin: 0 1em 0 0;
+	font-size: 90%;
+	text-align: right;
+} 
+
+ul#mainmenu li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 2em;
+	background: url(images/bullet.gif) no-repeat .7em center;
+}
+
+ul#mainmenu li:first-child {
+	padding: 0;
+	background:  none;
+}
+
+ul#mainmenu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+ul#mainmenu li a:hover,
+#footer a:hover {
+	color: #bd9b6e;
+	background: none;
+	border-bottom: 1px dashed #FFF;
+}
+
+ul#mainmenu li.active a,
+#footer a {
+	color: #FFF;
+	text-decoration: none;
+	border-bottom: 1px dashed #373020;
+}
+
+.facebook {
+	position: absolute;
+	display: block;
+	float: right;
+	top: -15px;
+	right: 35px;
+}
+
+.facebook a {
+	display: block;
+	padding: 3px 5px 0 5px;
+	background: #373020;
+}
+
+.facebook a:hover {
+	background: white;
+}
+
+.facebook img {
+	width: 32px;
+	height: 32px;
+}
+
+/*-----------------------------------------------
+Main area Layout
+-----------------------------------------------*/
+
+#main {
+	margin:  1em 0;
+	padding: 1em 0;
+	border-top: 1px solid #373020;
+	border-bottom: 1px solid #373020;
+}
+
+#main:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+#welcome {
+	position: relative;
+	margin:  0 0 1.8em 0;
+	padding: 0 0 0.6em 0;
+	border-bottom: 1px solid #373020;
+}
+
+#welcome .feature {
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	padding: .5em 1em;
+	background: black;
+	background: rgba(0,0,0,0.7);
+	font-size: medium;
+	line-height: 135%;
+	text-align: center;
+}
+
+#welcome img {
+	width: 100%;
+	height: auto;
+}
+
+#main p {
+	margin: 1em;
+}
+
+ul.photostrip {
+	padding: 0 .5em;
+	background: #000;
+}
+
+ul.photostrip:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+ul.photostrip li {
+	display: block;
+	float: left;
+	margin: 1em .4em;
+}
+
+ul.photostrip li a,
+ul.photostrip li img {
+	display: block;
+	float: left;
+	border: 8px solid #373020;
+}
+
+ul.photostrip li a img {
+	display: block;
+	border: 2px solid #bd9b6e;
+}
+
+ul.photostrip li a:hover {
+	border-color: #bd9b6e;
+}
+
+ul.photostrip li a:hover img {
+	border: 2px solid #FFF;
+}
+
+#gear #main img,
+img.feature {
+	border: 8px solid #000;
+}
+
+.left {
+	float: left;
+	width: 49%;
+}
+
+.right {
+	float: right;
+	width: 49%;
+}
+
+#gear .left img,
+#gear .right img,
+img.feature {
+	float: right;
+}
+
+img.feature {
+	margin-left: 1em;
+}
+
+#contact #main h3 {
+	clear: left;
+	float: left;
+	min-width: 4em;
+	margin: .5em inherit;
+	padding: .3em .7em;
+}
+
+#contact #main address,
+#contact #main p {
+	clear: right;
+	float: left;
+	margin: 1.2em .7em;
+	padding: .5em .7em;
+}
+
+#contact #main address p {
+	margin: 0;
+	padding: 0;
+}
+
+/*-----------------------------------------------
+Footer Layout
+-----------------------------------------------*/
+
+#footer {
+	position: relative;
+	margin: 0 0 3em 0;
+	padding: .5em 10em .5em 1em;
+}
+
+#footer p {
+	color: #bd9b6e;
+	font-size: x-small;
+	text-transform: uppercase;
+}
+
+#footer .credits {
+	position: absolute;
+	top: .5em;
+	right: 1em;
+}
+
+
+
+@media (max-width: 719px) {
+	#masthead h1 {
+		float: none;
+		width: 100%;
+	}
+
+	#welcome .feature {
+		position: static;
+		float: none;
+		padding-left: 0;
+		padding-right: 0;
+		background: none;
+		font-size: small;
+	}
+
+	#welcome .feature br {
+		display: none;
+	}
+
+	ul#mainmenu {
+		display: block;
+		clear: both;
+		float: none;
+		width: 100%;
+		margin: 2em 0 0 0;
+		text-align: left;
+	}
+
+	.photostrip li {
+		width: 30%;
+	}
+
+	.photostrip li img {
+		width: 80%;
+		height: auto;
+	}
+
+	div.left,
+	div.right {
+		float: none;
+		width: auto;
+	}
+}
