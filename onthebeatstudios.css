@@ -152,7 +152,8 @@ ul#mainmenu li.active a,
 	border-bottom: 1px dashed #373020;
 }
 
-.facebook {
+.facebook,
+.soundcloud {
 	position: absolute;
 	display: block;
 	float: right;
@@ -160,13 +161,19 @@ ul#mainmenu li.active a,
 	right: 35px;
 }
 
-.facebook a {
+.soundcloud {
+	right: 82px;
+}
+
+.facebook a,
+.soundcloud a {
 	display: block;
 	padding: 3px 5px 0 5px;
 	background: #373020;
 }
 
-.facebook a:hover {
+.facebook a:hover,
+.soundcloud a:hover {
 	background: white;
 }
 
@@ -309,6 +316,47 @@ img.feature {
 }
 
 /*-----------------------------------------------
+Facebook Like Box Layout
+-----------------------------------------------*/
+
+.facebook-like-box {
+	display: block;
+	float: left;
+	background-color: white;
+	border-top: 5px solid #3b5998;
+}
+
+	.facebook-like-box,
+	.facebook-like-box iframe {
+		width: 680px;
+		height: 500px;
+	}
+
+.soundcloud-plug {
+	display: block;
+	float: right;
+	width: 200px;
+	padding: 20px 10px 15px 10px;
+	background-color: #2a2a2a;
+	text-align: center;
+}
+
+	.soundcloud-plug p {
+		margin-bottom: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
+	.soundcloud-plug a {
+		color: #ff6600;
+		text-decoration: none;
+	}
+
+	.soundcloud-plug a:hover {
+		text-decoration: underline;
+		background-color: transparent;
+	}
+
+/*-----------------------------------------------
 Footer Layout
 -----------------------------------------------*/
 
@@ -371,6 +419,17 @@ Footer Layout
 
 	div.left,
 	div.right {
+		float: none;
+		width: auto;
+	}
+
+	.facebook-like-box,
+	.facebook-like-box iframe {
+		float: none;
+		width: 100%;
+	}
+
+	.soundcloud-plug {
 		float: none;
 		width: auto;
 	}
