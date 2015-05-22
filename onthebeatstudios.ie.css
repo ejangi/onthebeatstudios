@@ -1,0 +1,24 @@
+/*-----------------------------------------------
+IE 6 Fixes:
+-----------------------------------------------*/
+
+#site {
+	width: 920px;
+}
+
+hr.clr { display: none; }
+
+#main {
+	clear: both;
+	margin-top: 2.7em;
+	zoom: 1;
+}
+
+ul.photostrip {
+	clear: both;
+	zoom: 1;
+}
+
+#footer {
+	clear: both;
+}
